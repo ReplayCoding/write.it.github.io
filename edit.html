@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>write.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+  
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDLGN0w4KRoiVDQKqIrn0c5DNn3gIFJAuU",
+        authDomain: "write-it-33c24.firebaseapp.com",
+        databaseURL: "https://write-it-33c24.firebaseio.com",
+        projectId: "write-it-33c24",
+        storageBucket: "",
+        messagingSenderId: "662305495274"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <h1>Create Article</h1>
+    <div id="editor" contenteditable="true" onkeydown="console.log(event.target.textContent);">Edit Here</div>
+    <div><a id="publish" href="#">Publish</a> to <a id="name" href="#"></a></div>
+  </body>
+</html>

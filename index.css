@@ -1,0 +1,16 @@
+* {
+    font-family: Monospace;
+}
+h1 {
+    text-align: center;
+}
+#editor {
+  /*box-shadow: 0 0 2px #CCC;*/
+  min-height: 150px;
+  overflow: auto;
+  padding: 1em;
+  margin-top: 20px;
+  resize: none;
+  outline: none;
+  
+}
